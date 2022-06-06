@@ -11,3 +11,13 @@ models:
           - not_null
       - name: first_order_date
         description: NULL when a customer has not yet placed an order.
+  - name: sheets_model2
+    description: One record per user
+    columns:
+      - name: customer_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+        description: First name.
