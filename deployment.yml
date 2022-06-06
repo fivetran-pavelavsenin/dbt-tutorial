@@ -10,8 +10,8 @@ jobs:
      - name: test models
        command: dbt test # This example will run all your tests.
 
- - name: every3minutes
-   schedule: '*/3 * * * *' # The example will run every 30 minutes. Note that the cron string is quoted as otherwise it will be treated as invalid alias node (see https://yaml.org/spec/1.2/spec.html#*%20alias// for details)
+ - name: every30minutes
+   schedule: '*/30 * * * *' # The example will run every 30 minutes. Note that the cron string is quoted as otherwise it will be treated as invalid alias node (see https://yaml.org/spec/1.2/spec.html#*%20alias// for details)
    steps:
      - name: run models
        command: dbt run --models sheets_model # This example will run two specific models.
