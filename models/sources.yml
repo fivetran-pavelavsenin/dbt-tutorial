@@ -4,4 +4,4 @@ sources:
   - name: dbt_pavsenin
     schema: dbt_pavsenin
     tables:
-      - name: sheet_table_staging
+      - name: sheet_table_staging3
